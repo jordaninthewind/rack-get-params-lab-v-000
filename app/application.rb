@@ -22,7 +22,7 @@ class Application
           resp.write "#{item}\n"
         end
       else
-        puts "Your cart is empty"
+        resp.write "Your cart is empty"
       end
     else
       resp.write "Path Not Found"
