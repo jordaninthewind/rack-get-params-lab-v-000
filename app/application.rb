@@ -23,6 +23,8 @@ class Application
         resp.write "added #{add_item}"
       else
         resp.write "We don't have that item"
+      end
+    end
 
     elsif req.path.match(/cart/)
       if !@@cart.empty?
