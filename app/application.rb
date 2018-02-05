@@ -24,7 +24,6 @@ class Application
       else
         resp.write "We don't have that item"
       end
-    end
 
     elsif req.path.match(/cart/)
       if !@@cart.empty?
