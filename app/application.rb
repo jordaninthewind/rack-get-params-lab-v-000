@@ -20,6 +20,7 @@ class Application
       if !@@cart.empty?
         @@cart.each do | item |
           resp.write "#{item}\n"
+        end
       else
         puts "Your cart is empty"
       end
